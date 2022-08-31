@@ -27,3 +27,22 @@ function unparse_checkbox(tid){
     return opt_body+","+checked;
 }
 
+document.getElementById("a_in").onclick = function(){
+    check_checkbox("a_in");
+}
+
+document.getElementById("b_in").onclick = function(){
+    check_checkbox("b_in");
+}
+
+document.getElementById("c_in").onclick = function(){
+    check_checkbox("c_in");
+}
+
+document.getElementById("d_in").onclick = function(){
+    check_checkbox("d_in");
+}
+
+document.getElementById("unparse").onclick = function(){
+    console.log(unparse_checkbox("test_cb"));
+}
